@@ -1,0 +1,33 @@
+# Tu dong xuat ban: moi lan kho GitHub co thay doi tren nhanh main,
+# trang se duoc dua len DUNG du an Cloudflare Pages hien tai
+# (nguyen-thi-luong-profile) - giu nguyen dia chi pages.dev.
+name: Xuat ban len Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  xuat-ban:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lay ma nguon tu kho
+        uses: actions/checkout@v4
+
+      - name: Chuan bi thu muc xuat ban (chi gom file trang can)
+        run: |
+          mkdir -p dist
+          cp index.html dist/
+          cp styles.css dist/
+          cp script.js dist/
+          cp -r assets dist/
+          cp -r admin dist/
+          cp -r data dist/
+
+      - name: Tai len Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=nguyen-thi-luong-profile --branch=main
