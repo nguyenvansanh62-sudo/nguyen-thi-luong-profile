@@ -1,0 +1,115 @@
+{
+  "ghi_chu": "File du lieu noi dung trang Nguyen Thi Luong. Sua qua trang quan tri /admin; dung sua truc tiep file nay.",
+  "thong_tin_chung": {
+    "tieu_de_tab": "Nguyễn Thị Lương — Profile cá nhân",
+    "mo_ta_trang": "Nguyễn Thị Lương — hồ sơ cá nhân và hành trình kinh doanh, kết nối và phát triển.",
+    "ten_hien_thi": "Nguyễn Thị Lương",
+    "dong_phu_ten": "PERSONAL PROFILE",
+    "chu_viet_tat": "NL"
+  },
+  "dau_trang": {
+    "nhan_cau_chuyen": "Câu chuyện",
+    "nhan_dinh_huong": "Định hướng",
+    "nhan_thu_vien": "Thư viện",
+    "nut_lien_he": "Liên hệ"
+  },
+  "gioi_thieu": {
+    "dong_nho_tren": "HỒ SƠ CÁ NHÂN · KINH DOANH",
+    "loi_chao": "Xin chào, tôi là",
+    "ten_dong_1": "Nguyễn",
+    "ten_dong_2": "Thị Lương",
+    "doan_mo_dau": "Chào mừng bạn đến với không gian cá nhân của tôi — nơi chia sẻ hành trình, góc nhìn và những kết nối trong công việc kinh doanh.",
+    "nut_chinh": "Khám phá câu chuyện",
+    "nut_phu": "Kết nối cùng tôi",
+    "anh_chan_dung": "assets/portrait-city.png",
+    "mo_ta_anh_chan_dung": "Chân dung chị Nguyễn Thị Lương trong không gian thành phố buổi tối",
+    "ghi_chu_duoi_anh": "HÀNH TRÌNH CỦA TÔI"
+  },
+  "mang_xa_hoi": {
+    "link_youtube": "https://www.youtube.com/@L%C6%B0%C6%A1ngNguy%E1%BB%85n-y2s3q",
+    "link_facebook": "https://www.facebook.com/share/1F33MwcFfR/",
+    "link_tim_youtube": "https://www.youtube.com/results?search_query=ctnguyenluong1970%40gmail.com+++",
+    "nhan_tim_youtube": "Tìm Nguyễn Thị Lương trên YouTube"
+  },
+  "cau_chuyen": {
+    "nhan_muc": "01 — CÂU CHUYỆN",
+    "tieu_de_dong_1": "Mỗi hành trình",
+    "tieu_de_dong_2": "bắt đầu từ",
+    "tieu_de_dong_2_nghieng": "một lựa chọn.",
+    "anh": "assets/portrait-garden.png",
+    "mo_ta_anh": "Chị Nguyễn Thị Lương trong khu vườn Nhật",
+    "chu_thich_anh": "HÀNH TRÌNH · 2026",
+    "doan_noi_bat": "Tôi tin rằng kinh doanh bền vững bắt đầu từ sự chân thành, tinh thần học hỏi và những mối quan hệ được vun đắp bằng giá trị thật.",
+    "doan_2": "Đây là góc nhỏ để tôi chia sẻ về bản thân, những điều mình quan tâm và cách tôi nhìn nhận hành trình phát triển trong công việc kinh doanh.",
+    "doan_3": "Mỗi cuộc trò chuyện là cơ hội để lắng nghe, trao đổi và cùng nhau tìm ra hướng đi phù hợp.",
+    "nut_lien_he": "Bắt đầu một cuộc trò chuyện"
+  },
+  "gia_tri": {
+    "nhan_muc": "02 — GIÁ TRỊ & ĐỊNH HƯỚNG",
+    "tieu_de_dong_1": "Điều tôi chọn",
+    "tieu_de_dong_2_nghieng": "mang theo.",
+    "doan_mo_dau": "Những nguyên tắc giản dị định hình cách tôi làm việc, kết nối và hướng tới tương lai.",
+    "danh_sach": [
+      {
+        "tieu_de": "Chân thành",
+        "mo_ta": "Lắng nghe cởi mở, giao tiếp rõ ràng và tôn trọng mỗi kết nối.",
+        "ky_hieu": "✳"
+      },
+      {
+        "tieu_de": "Học hỏi",
+        "mo_ta": "Không ngừng khám phá góc nhìn mới và hoàn thiện chính mình mỗi ngày.",
+        "ky_hieu": "✧"
+      },
+      {
+        "tieu_de": "Phát triển bền vững",
+        "mo_ta": "Ưu tiên những lựa chọn tạo giá trị lâu dài cho công việc và cộng đồng.",
+        "ky_hieu": "✦"
+      }
+    ]
+  },
+  "thu_vien": {
+    "nhan_muc": "03 — NHỮNG KHOẢNH KHẮC",
+    "tieu_de_dong_1": "Một vài",
+    "tieu_de_nghieng": "khung hình.",
+    "doan_mo_dau": "Những hình ảnh ghi lại các sắc thái khác nhau trên hành trình của tôi.",
+    "anh_1": {
+      "duong_dan": "assets/portrait-bloom.png",
+      "chu_thich": "SẮC MÀU & CẢM HỨNG",
+      "mo_ta_anh": "Chị Lương giữa khung cảnh biển và hoa"
+    },
+    "anh_2": {
+      "duong_dan": "assets/portrait-taj.png",
+      "chu_thich": "NHỮNG CHUYẾN ĐI",
+      "mo_ta_anh": "Chị Lương trong trang phục truyền thống trước Taj Mahal"
+    },
+    "anh_3": {
+      "duong_dan": "assets/portrait-tea.png",
+      "chu_thich": "KHOẢNH KHẮC BÌNH YÊN",
+      "mo_ta_anh": "Chị Lương trong khoảnh khắc thưởng trà"
+    }
+  },
+  "video": {
+    "nhan_muc": "04 — VIDEO GIỚI THIỆU",
+    "tieu_de_dong_1": "Một lời chào",
+    "tieu_de_dong_2_nghieng": "từ tôi.",
+    "doan_gioi_thieu": "Video giới thiệu sẽ được cập nhật tại đây.",
+    "video_youtube_id": "",
+    "ghi_chu_video": "De trong = trang hien dong VIDEO DANG DUOC CAP NHAT. Khi co video YouTube, dan ma ID cua video vao o Ma ID video YouTube (doan ma sau dau v= trong link YouTube) la video tu hien tren trang."
+  },
+  "lien_he": {
+    "nhan_muc": "05 — KẾT NỐI",
+    "tieu_de_dong_1": "Hãy cùng",
+    "tieu_de_dong_2_nghieng": "trò chuyện.",
+    "doan_mo_dau": "Nếu bạn muốn kết nối, trao đổi hoặc theo dõi những chia sẻ của tôi, hãy chọn kênh phù hợp bên dưới.",
+    "so_dien_thoai_hien_thi": "0352 378 652",
+    "so_dien_thoai_goi": "+84352378652",
+    "email": "ctnguyenluong1970@gmail.com",
+    "nhan_the_youtube": "YouTube",
+    "nhan_the_facebook": "Facebook",
+    "nhan_the_tim_youtube": "YouTube · Nguyễn Thị Lương"
+  },
+  "chan_trang": {
+    "dong_giua": "Chân thành trong kết nối. Bền vững trong hành trình.",
+    "dong_ban_quyen": "© 2026 NGUYỄN THỊ LƯƠNG"
+  }
+}

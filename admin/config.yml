@@ -1,0 +1,152 @@
+# Cau hinh trang quan tri "Nguyen Thi Luong - Profile" (Sveltia CMS - tuong thich dinh dang Decap CMS)
+# Noi dung sua tai day se luu vao data/du-lieu-noi-dung.json trong kho GitHub,
+# sau do co che tu dong xuat ban dua ban moi len Cloudflare Pages.
+
+backend:
+  name: github
+  repo: nguyenvansanh62-sudo/nguyen-thi-luong-profile
+  branch: main
+
+site_url: https://nguyen-thi-luong-profile.pages.dev
+display_url: https://nguyen-thi-luong-profile.pages.dev
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "noi-dung-trang"
+    label: "Nội dung trang Web"
+    files:
+      - name: "du-lieu"
+        label: "Toàn bộ nội dung trang"
+        file: "data/du-lieu-noi-dung.json"
+        fields:
+          - { label: "Ghi chú (đừng sửa ô này)", name: "ghi_chu", widget: "text" }
+          - label: "Thông tin chung của trang"
+            name: "thong_tin_chung"
+            widget: "object"
+            fields:
+              - { label: "Tiêu đề trên tab trình duyệt", name: "tieu_de_tab", widget: "string" }
+              - { label: "Mô tả trang (cho Google)", name: "mo_ta_trang", widget: "text" }
+              - { label: "Tên hiển thị", name: "ten_hien_thi", widget: "string" }
+              - { label: "Dòng phụ dưới tên", name: "dong_phu_ten", widget: "string" }
+              - { label: "Chữ viết tắt (trong vòng tròn)", name: "chu_viet_tat", widget: "string" }
+          - label: "Thanh trên cùng của trang"
+            name: "dau_trang"
+            widget: "object"
+            fields:
+              - { label: "Nhãn mục Câu chuyện", name: "nhan_cau_chuyen", widget: "string" }
+              - { label: "Nhãn mục Định hướng", name: "nhan_dinh_huong", widget: "string" }
+              - { label: "Nhãn mục Thư viện", name: "nhan_thu_vien", widget: "string" }
+              - { label: "Nút Liên hệ", name: "nut_lien_he", widget: "string" }
+          - label: "Phần giới thiệu (đầu trang)"
+            name: "gioi_thieu"
+            widget: "object"
+            fields:
+              - { label: "Dòng nhỏ trên cùng", name: "dong_nho_tren", widget: "string" }
+              - { label: "Lời chào", name: "loi_chao", widget: "string" }
+              - { label: "Tên — phần đầu (chữ thường)", name: "ten_dong_1", widget: "string" }
+              - { label: "Tên — phần sau (chữ nghiêng)", name: "ten_dong_2", widget: "string" }
+              - { label: "Đoạn mở đầu", name: "doan_mo_dau", widget: "text" }
+              - { label: "Nút chính", name: "nut_chinh", widget: "string" }
+              - { label: "Nút phụ (kết nối)", name: "nut_phu", widget: "string" }
+              - { label: "Ảnh chân dung chính", name: "anh_chan_dung", widget: "image" }
+              - { label: "Mô tả ảnh (cho người khiếm thị/Google)", name: "mo_ta_anh_chan_dung", widget: "string" }
+              - { label: "Dòng chữ dưới ảnh", name: "ghi_chu_duoi_anh", widget: "string" }
+          - label: "Mạng xã hội (link dùng chung cả trang)"
+            name: "mang_xa_hoi"
+            widget: "object"
+            fields:
+              - { label: "Link kênh YouTube", name: "link_youtube", widget: "string" }
+              - { label: "Link Facebook", name: "link_facebook", widget: "string" }
+              - { label: "Link tìm kiếm trên YouTube", name: "link_tim_youtube", widget: "string" }
+              - { label: "Nhãn link tìm kiếm YouTube", name: "nhan_tim_youtube", widget: "string" }
+          - label: "Phần Câu chuyện"
+            name: "cau_chuyen"
+            widget: "object"
+            fields:
+              - { label: "Nhãn mục", name: "nhan_muc", widget: "string" }
+              - { label: "Tiêu đề — dòng 1", name: "tieu_de_dong_1", widget: "string" }
+              - { label: "Tiêu đề — dòng 2 (chữ thường)", name: "tieu_de_dong_2", widget: "string" }
+              - { label: "Tiêu đề — dòng 2 (phần chữ nghiêng)", name: "tieu_de_dong_2_nghieng", widget: "string" }
+              - { label: "Ảnh câu chuyện", name: "anh", widget: "image" }
+              - { label: "Mô tả ảnh", name: "mo_ta_anh", widget: "string" }
+              - { label: "Chú thích trên ảnh", name: "chu_thich_anh", widget: "string" }
+              - { label: "Đoạn nổi bật (câu trích dẫn)", name: "doan_noi_bat", widget: "text" }
+              - { label: "Đoạn 2", name: "doan_2", widget: "text" }
+              - { label: "Đoạn 3", name: "doan_3", widget: "text" }
+              - { label: "Nút liên hệ cuối phần", name: "nut_lien_he", widget: "string" }
+          - label: "Phần Giá trị & Định hướng"
+            name: "gia_tri"
+            widget: "object"
+            fields:
+              - { label: "Nhãn mục", name: "nhan_muc", widget: "string" }
+              - { label: "Tiêu đề — dòng 1", name: "tieu_de_dong_1", widget: "string" }
+              - { label: "Tiêu đề — dòng 2 (chữ nghiêng)", name: "tieu_de_dong_2_nghieng", widget: "string" }
+              - { label: "Đoạn mở đầu", name: "doan_mo_dau", widget: "text" }
+              - label: "Danh sách giá trị"
+                name: "danh_sach"
+                widget: "list"
+                fields:
+                  - { label: "Tên giá trị", name: "tieu_de", widget: "string" }
+                  - { label: "Mô tả", name: "mo_ta", widget: "text" }
+                  - { label: "Ký hiệu trang trí", name: "ky_hieu", widget: "string" }
+          - label: "Phần Thư viện ảnh"
+            name: "thu_vien"
+            widget: "object"
+            fields:
+              - { label: "Nhãn mục", name: "nhan_muc", widget: "string" }
+              - { label: "Tiêu đề — phần chữ thường", name: "tieu_de_dong_1", widget: "string" }
+              - { label: "Tiêu đề — phần chữ nghiêng", name: "tieu_de_nghieng", widget: "string" }
+              - { label: "Đoạn mở đầu", name: "doan_mo_dau", widget: "text" }
+              - label: "Ảnh 1 (ảnh lớn)"
+                name: "anh_1"
+                widget: "object"
+                fields:
+                  - { label: "Ảnh", name: "duong_dan", widget: "image" }
+                  - { label: "Chú thích dưới ảnh", name: "chu_thich", widget: "string" }
+                  - { label: "Mô tả ảnh", name: "mo_ta_anh", widget: "string" }
+              - label: "Ảnh 2"
+                name: "anh_2"
+                widget: "object"
+                fields:
+                  - { label: "Ảnh", name: "duong_dan", widget: "image" }
+                  - { label: "Chú thích dưới ảnh", name: "chu_thich", widget: "string" }
+                  - { label: "Mô tả ảnh", name: "mo_ta_anh", widget: "string" }
+              - label: "Ảnh 3"
+                name: "anh_3"
+                widget: "object"
+                fields:
+                  - { label: "Ảnh", name: "duong_dan", widget: "image" }
+                  - { label: "Chú thích dưới ảnh", name: "chu_thich", widget: "string" }
+                  - { label: "Mô tả ảnh", name: "mo_ta_anh", widget: "string" }
+          - label: "Phần Video giới thiệu"
+            name: "video"
+            widget: "object"
+            fields:
+              - { label: "Nhãn mục", name: "nhan_muc", widget: "string" }
+              - { label: "Tiêu đề — dòng 1", name: "tieu_de_dong_1", widget: "string" }
+              - { label: "Tiêu đề — dòng 2 (chữ nghiêng)", name: "tieu_de_dong_2_nghieng", widget: "string" }
+              - { label: "Đoạn giới thiệu", name: "doan_gioi_thieu", widget: "text" }
+              - { label: "Mã ID video YouTube (để trống = chưa có video)", name: "video_youtube_id", widget: "string", required: false }
+              - { label: "Ghi chú về video (đừng sửa ô này)", name: "ghi_chu_video", widget: "text" }
+          - label: "Phần Liên hệ"
+            name: "lien_he"
+            widget: "object"
+            fields:
+              - { label: "Nhãn mục", name: "nhan_muc", widget: "string" }
+              - { label: "Tiêu đề — dòng 1", name: "tieu_de_dong_1", widget: "string" }
+              - { label: "Tiêu đề — dòng 2 (chữ nghiêng)", name: "tieu_de_dong_2_nghieng", widget: "string" }
+              - { label: "Đoạn mở đầu", name: "doan_mo_dau", widget: "text" }
+              - { label: "Số điện thoại (cách hiển thị)", name: "so_dien_thoai_hien_thi", widget: "string" }
+              - { label: "Số điện thoại (mã gọi, dạng +84...)", name: "so_dien_thoai_goi", widget: "string" }
+              - { label: "Email (để trống = ẩn ô email)", name: "email", widget: "string", required: false }
+              - { label: "Tên thẻ YouTube", name: "nhan_the_youtube", widget: "string" }
+              - { label: "Tên thẻ Facebook", name: "nhan_the_facebook", widget: "string" }
+              - { label: "Tên thẻ tìm kiếm YouTube", name: "nhan_the_tim_youtube", widget: "string" }
+          - label: "Chân trang"
+            name: "chan_trang"
+            widget: "object"
+            fields:
+              - { label: "Dòng giữa chân trang", name: "dong_giua", widget: "string" }
+              - { label: "Dòng bản quyền", name: "dong_ban_quyen", widget: "string" }
